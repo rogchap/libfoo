@@ -7,13 +7,8 @@ import (
 )
 
 //export reverse
-func reverse(in string) string {
-	return foo.Reverse(in)
-}
-
-//export sayHello
-func sayHello() string {
-	return "Hello from Go\x00"
+func reverse(str *C.char) *C.char {
+	return C.CString(foo.Reverse(C.GoString(str)))
 }
 
 func main() {}
