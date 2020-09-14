@@ -18,6 +18,6 @@ ios-x86_64:
 	go build -buildmode=c-archive -tags ios -o $(IOS_OUT)/x86_64.a ./cmd/libfoo
 
 ios: ios-arm64 ios-x86_64
-	lipo $(IOS_OUT)/x86_64.a $(IOS_OUT)/arm64.a -create -output $(IOS_OUT)/libfoo.a
-	cp $(IOS_OUT)/arm64.h $(IOS_OUT)/libfoo.h
+	lipo $(IOS_OUT)/x86_64.a $(IOS_OUT)/arm64.a -create -output $(IOS_OUT)/foo.a
+	cp $(IOS_OUT)/arm64.h $(IOS_OUT)/foo.h
 

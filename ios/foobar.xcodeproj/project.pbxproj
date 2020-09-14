@@ -13,8 +13,7 @@
 		DB07600824FE19EF003BBA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB07600724FE19EF003BBA2B /* Assets.xcassets */; };
 		DB07600B24FE19EF003BBA2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB07600A24FE19EF003BBA2B /* Preview Assets.xcassets */; };
 		DB07600E24FE19EF003BBA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB07600C24FE19EF003BBA2B /* LaunchScreen.storyboard */; };
-		DB0A2F45250C5A16003C59BF /* libfoo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0A2F43250C5A16003C59BF /* libfoo.a */; };
-		DB1656AC24FF52D7008DA4B8 /* f.c in Sources */ = {isa = PBXBuildFile; fileRef = DB1656AB24FF52D7008DA4B8 /* f.c */; };
+		DBB6D212250C8F0100829B2E /* foo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB6D210250C8F0100829B2E /* foo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +25,9 @@
 		DB07600A24FE19EF003BBA2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB07600D24FE19EF003BBA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB07600F24FE19EF003BBA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB0A2F43250C5A16003C59BF /* libfoo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoo.a; path = ../go/lib/ios/libfoo.a; sourceTree = "<group>"; };
-		DB0A2F44250C5A16003C59BF /* libfoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libfoo.h; path = ../go/lib/ios/libfoo.h; sourceTree = "<group>"; };
 		DB1656A924FF52D7008DA4B8 /* foobar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "foobar-Bridging-Header.h"; sourceTree = "<group>"; };
-		DB1656AA24FF52D7008DA4B8 /* f.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = f.h; path = foobar/f.h; sourceTree = "<group>"; };
-		DB1656AB24FF52D7008DA4B8 /* f.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = f.c; path = foobar/f.c; sourceTree = "<group>"; };
+		DBB6D210250C8F0100829B2E /* foo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = foo.a; path = ../go/lib/ios/foo.a; sourceTree = "<group>"; };
+		DBB6D211250C8F0100829B2E /* foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = foo.h; path = ../go/lib/ios/foo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB0A2F45250C5A16003C59BF /* libfoo.a in Frameworks */,
+				DBB6D212250C8F0100829B2E /* foo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,12 +45,10 @@
 		DB075FF524FE19ED003BBA2B = {
 			isa = PBXGroup;
 			children = (
-				DB1656AA24FF52D7008DA4B8 /* f.h */,
-				DB1656AB24FF52D7008DA4B8 /* f.c */,
 				DB07600024FE19EE003BBA2B /* foobar */,
 				DB075FFF24FE19EE003BBA2B /* Products */,
-				DB0A2F43250C5A16003C59BF /* libfoo.a */,
-				DB0A2F44250C5A16003C59BF /* libfoo.h */,
+				DBB6D210250C8F0100829B2E /* foo.a */,
+				DBB6D211250C8F0100829B2E /* foo.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,7 +157,6 @@
 			files = (
 				DB07600224FE19EE003BBA2B /* AppDelegate.swift in Sources */,
 				DB07600424FE19EE003BBA2B /* SceneDelegate.swift in Sources */,
-				DB1656AC24FF52D7008DA4B8 /* f.c in Sources */,
 				DB07600624FE19EE003BBA2B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
